@@ -1,0 +1,13 @@
+name: BioTherma-AI
+icon: 🌱
+description: >
+  Edge-AI monitor for a small anaerobic bio-digester. The STM32 reads an AM2320
+  in the reactor headspace; the Qualcomm MPU runs a GRU forecaster for anomaly
+  detection and a first-order hydrolysis model for biogas yield, harvest timing
+  and carbon-to-nitrogen balance. Status shows on the board's own RGB LEDs.
+
+ports:
+  - 7000
+
+bricks:
+  - arduino:web_ui
